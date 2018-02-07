@@ -3,7 +3,7 @@
 ## cMonkey<sub>2</sub> - Python port of the [cMonkey biclustering algorithm](http://cmonkey.systemsbiology.net)
 
 ### Description
-
+# Frank Schmitz lettuce fork
 This is the Python implementation of the cMonkey algorithm based on the original R implementation by David J. Reiss, Institute for Systems Biology.
 
 ### Documentation
