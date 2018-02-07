@@ -274,8 +274,8 @@ def compute_column_scores(membership, matrix, num_clusters,
                 cluster_column_scores.append(None)
             else:
                 cur_column_scores = BSCM_obj.getPvals(make_submatrix(cluster).row_names, num_cores=num_cores)
-                exp_names = list(cur_column_scores.keys())
-                exp_scores = np.array(list(cur_column_scores.values()))
+                exp_names = list(cur_column_scores.keys())  ### changed for py3.x compatibility
+                exp_scores = np.array(list(cur_column_scores.values()))  ### changed for py3.x compatibility
                 cluster_column_scores.append((exp_names, exp_scores))
 
     substitution = compute_substitution(cluster_column_scores)
