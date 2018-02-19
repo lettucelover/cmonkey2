@@ -10,7 +10,7 @@
   <component name="TemplatesService">
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/docs/_templates" />
+        <option value="$MODULE_DIR$/../../cortex/retired/python/isbio/cMonkey/cmonkey-python-master/cmviewer/templates" />
       </list>
     </option>
   </component>
