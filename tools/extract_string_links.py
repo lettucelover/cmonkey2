@@ -29,12 +29,12 @@ def process_stringdb(stringfile, taxonomy_id):
     result = []
     max_score = 0.0
     line = stringfile.readline()  # ignore header
-    print "processing STRING database..."
+    print ("processing STRING database...")
     line = stringfile.readline()
     prefix = "%s." % str(taxonomy_id)
     while line != None:
         if line.startswith(prefix):
-            print line.strip()
+            print (line.strip())
         line = stringfile.readline()
 
 """
@@ -70,8 +70,8 @@ if __name__ == '__main__':
                                                                              comment='#'))
         kegg_org = kegg_mapper(sys.argv[2])
         rsat_info = organism.RsatSpeciesInfo(rsatdb, kegg_org, None, None)
-        print "RSAT SPECIES: ", rsat_info.species
-        print "TAX ID: ", rsat_info.taxonomy_id
+        print("RSAT SPECIES: ", rsat_info.species)
+        print("TAX ID: ", rsat_info.taxonomy_id)
         feature_names = rsatdb.get_feature_names(rsat_info.species)
         feature_names_dfile = util.DelimitedFile.create_from_text(feature_names, comment='--')
         synonyms = thesaurus.create_from_rsat_feature_names(feature_names_dfile)
